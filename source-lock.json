@@ -26,10 +26,12 @@
   "kernel-common": {
     "path": "common",
     "base": "648fd74a4d2eaed87fe242e26506f724619dacff",
-    "revision": "5e223c0a317c683197934ab5e8160082a061033e",
-    "tree": "1f0a666d693e52f4b50068f259b68724184c2e5a",
+    "revision": "d867ce4aa96d8ec1bfab8469e0e5b7dcd18a278a",
+    "tree": "9e839110850a9cb3c726834a038321ac28630a1c",
     "original_archived_revision": "aea50e66e9e486de36216818b7d2d924543bfe10",
-    "verification": "Exact frozen R2 plus touch source tree. Full upstream source snapshot at 648fd74a plus 26 separate port commits; port authors, messages and trees retained. Earlier upstream ancestry remains available upstream/local, not reimported into this branch."
+    "previous_published_revision": "5e223c0a317c683197934ab5e8160082a061033e",
+    "backport_reference": "revyos/linux acbd3c3f6d7e5610b7343dd55224bfe5e079c7e9",
+    "verification": "Frozen R2/touch source plus seven DRM backports. PowerVR UAPI/6000 concurrent VM map-unmap pairs/GPU pixel-hash tests passed; Verisilicon DSI modeset, six cursor positions and Android restart passed via separate temporary module tests. No new full-image/cold-boot validation. See validation/lpi4a-drm-20260918.md. Earlier upstream ancestry remains upstream/local."
   },
   "platform-art": {
     "path": "art",
