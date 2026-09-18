@@ -1,0 +1,34 @@
+[
+  {
+    "project": "packages/modules/Virtualization",
+    "archive": "platform-packages-modules-Virtualization-oversized-assets.tar.gz",
+    "url": "https://github.com/thead-android/platform-packages-modules-Virtualization/releases/download/source-20260918/platform-packages-modules-Virtualization-oversized-assets.tar.gz",
+    "sha256": "757dc05fb71df1c2093f86378e13af636179d5c24c3e64c5c11b15114ace89af",
+    "members": [
+      {
+        "path": "libs/apkverify/tests/data/input.272629760",
+        "sha256": "5f3c4c7a03a42948e80bcd7ffc89592d266bfccd3f438c206f69a2e0db7ac8a4"
+      }
+    ]
+  },
+  {
+    "project": "packages/services/display_safety",
+    "archive": "platform-packages-services-display_safety-oversized-assets.tar.gz",
+    "url": "https://github.com/thead-android/platform-packages-services-display_safety/releases/download/source-20260918/platform-packages-services-display_safety-oversized-assets.tar.gz",
+    "sha256": "e19e2f9b50a538272b7e3e9c0c37a8385f2b9c5fdaa9e5713089528f03500efd",
+    "members": [
+      {
+        "path": "reference/harry-app/data/ClusterRedesign.fig",
+        "sha256": "7df1a7690f09e609f2c5989b8bb334d44eda18633a9a7d74d034e1b321c4f876"
+      },
+      {
+        "path": "service/harry-prebuilt/data/assets/common/adas/build/road_scene/google_car/google_car.blend",
+        "sha256": "962f74c29cac28a4b93def89120311f9f48d3654cd8db92e8db16e2db682a9e7"
+      },
+      {
+        "path": "service/harry-prebuilt/data/assets/common/adas/build/road_scene/google_car/google_car.blend1",
+        "sha256": "a0a22f21a6afba56add56be92fede4907aa618e4ce268c3783bc7050a33d8d5a"
+      }
+    ]
+  }
+]

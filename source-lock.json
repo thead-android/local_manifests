@@ -1,0 +1,314 @@
+{
+  "device-thead-common": {
+    "path": "device/thead/common",
+    "base": "efc1f5de3567508ba094742041ac20a7403b5cd1",
+    "revision": "54b31c06be13e96e8c6e8308f794db314d980888",
+    "tree": "ee7e75e573470eb81250554c74448548cb092c2d",
+    "original_archived_revision": "54b31c06be13e96e8c6e8308f794db314d980888",
+    "verification": "byte-identical to build checkout"
+  },
+  "device-thead-th1520": {
+    "path": "device/thead/th1520",
+    "base": "d5435aa23a641c23eef3f7553df94f5098da6b81",
+    "revision": "deed294ed68a1474fcb3e31c1d345b90f82d1314",
+    "tree": "2ce49a3e1109a7ba23d5d3bbeab302d14c12ea15",
+    "original_archived_revision": "deed294ed68a1474fcb3e31c1d345b90f82d1314",
+    "verification": "byte-identical to build checkout"
+  },
+  "device-thead-th1520-lichee_pi_4a": {
+    "path": "device/thead/th1520/lichee_pi_4a",
+    "base": "1542ff9fc6b81fe2bd8d166ac8bfddde7cf877d4",
+    "revision": "4e4fe1cf0bddf7538f36ad987f96d26a6a641e7b",
+    "tree": "52186a1f8415dab72aaa5ee58225ce1d138a1dab",
+    "original_archived_revision": "4e4fe1cf0bddf7538f36ad987f96d26a6a641e7b",
+    "verification": "archived product source plus exact 20260917 touch integration"
+  },
+  "kernel-common": {
+    "path": "common",
+    "base": "648fd74a4d2eaed87fe242e26506f724619dacff",
+    "revision": "5e223c0a317c683197934ab5e8160082a061033e",
+    "tree": "1f0a666d693e52f4b50068f259b68724184c2e5a",
+    "original_archived_revision": "aea50e66e9e486de36216818b7d2d924543bfe10",
+    "verification": "Exact frozen R2 plus touch source tree. Full upstream source snapshot at 648fd74a plus 26 separate port commits; port authors, messages and trees retained. Earlier upstream ancestry remains available upstream/local, not reimported into this branch."
+  },
+  "platform-art": {
+    "path": "art",
+    "base": "b753cf97923c3695338d21466fa14c57b480a59a",
+    "revision": "b7ca017bae32b227b331b12e0f74c84f3fbd7267",
+    "tree": "9d5b5c4e0aaddb30b7660f1b9eda860129f25a20",
+    "original_archived_revision": "b7ca017bae32b227b331b12e0f74c84f3fbd7267",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-bionic": {
+    "path": "bionic",
+    "base": "06356e41c5ed7b12220b24c05ba4fdb873b126a7",
+    "revision": "252d78e8b6d4838451bc4c7f7072fbade7542977",
+    "tree": "c23f020d3ef9d8564e535b99239d6c9e25c5390b",
+    "original_archived_revision": "252d78e8b6d4838451bc4c7f7072fbade7542977",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-build-make": {
+    "path": "build/make",
+    "base": "5ce6f787337d0223710bf7d4a16dbe6d2a35f777",
+    "revision": "fdadbe96320bb763d4621710ce4e2485fd4e0356",
+    "tree": "dd3fc828b918662c2e8d934ab9a992287785f1d2",
+    "original_archived_revision": "fdadbe96320bb763d4621710ce4e2485fd4e0356",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-build-soong": {
+    "path": "build/soong",
+    "base": "6722dd8833db7482df1a2543ca3fcf67ddf0f7b1",
+    "revision": "0f26efc24fd5f6bf788318156a19af5e48d92248",
+    "tree": "f019642a3fbb04c3e7680a59d515cb53f72c3030",
+    "original_archived_revision": "0f26efc24fd5f6bf788318156a19af5e48d92248",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-device-google-sdv": {
+    "path": "device/google/sdv",
+    "base": "f4bfa128d5d9fb21adca8430694cc16c90b6144a",
+    "revision": "332dab85dae4995c252fc77be3f904a9d63ba4d5",
+    "tree": "386e07348d2afea74fd721e5c48d729242097664",
+    "original_archived_revision": "332dab85dae4995c252fc77be3f904a9d63ba4d5",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-external-drm_hwcomposer": {
+    "path": "external/drm_hwcomposer",
+    "base": "87daba89b05fabc7f1e9316e3f283f19fd0c45cd",
+    "revision": "bae12e647aa8329fc527854b3f895497d572fdb5",
+    "tree": "92a08e78c91f3d2665046f1dc488379d7933fe92",
+    "original_archived_revision": "bae12e647aa8329fc527854b3f895497d572fdb5",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-external-libopus": {
+    "path": "external/libopus",
+    "base": "31712864928e8c681b383eddbc0e9b9d58596b0c",
+    "revision": "931d4b5b10f51329354b36430657f6da67486fb2",
+    "tree": "33b67f5db302301b8b7f8b33cffce918621285ed",
+    "original_archived_revision": "931d4b5b10f51329354b36430657f6da67486fb2",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-external-mesa3d": {
+    "path": "external/mesa3d",
+    "base": "875160ed32cc5bc32777fa04870a0a57ed38c987",
+    "revision": "f15c4205c7125258452b0757218e02a49d9761d0",
+    "tree": "d00a3b5dfd4de4ed3dcf5a8ddd636cbeea98f60e",
+    "original_archived_revision": "f15c4205c7125258452b0757218e02a49d9761d0",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-external-minigbm": {
+    "path": "external/minigbm",
+    "base": "ce79bbee67b3e2ea7abb110e1415e9ceceaa6471",
+    "revision": "30337d6329c005abe1286dfaf746ce0f5356f9e7",
+    "tree": "460f2f67bc435bb067edb80841acbe039a5276b3",
+    "original_archived_revision": "30337d6329c005abe1286dfaf746ce0f5356f9e7",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-external-skia": {
+    "path": "external/skia",
+    "base": "508606366e71a3daa933a4e08bc49b84e387ec18",
+    "revision": "6c5878ae3c1d680be72276909a9ec8f3ee599aa5",
+    "tree": "21383f2b4cfd1621419d549d1ca9a551720cfa84",
+    "original_archived_revision": "6c5878ae3c1d680be72276909a9ec8f3ee599aa5",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-external-v4l2_codec2": {
+    "path": "external/v4l2_codec2",
+    "base": "1226adff48e591f0b6cac8d3a271a7324d8fc0ec",
+    "revision": "0197bae5764b28a090512a11007c775b757264c5",
+    "tree": "c3c84b6e40d8a648dafbcaefc0de4e612840fbff",
+    "original_archived_revision": "0197bae5764b28a090512a11007c775b757264c5",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-external-wpa_supplicant_8": {
+    "path": "external/wpa_supplicant_8",
+    "base": "3396e8b8365817b3a24b78b534b04bb9dcea330a",
+    "revision": "33e6f97c88eeb57aa7015dca28a635f5e5bdaaed",
+    "tree": "e57dc4075f4d8c29cb4fe31c5a7e8aacd129bcee",
+    "original_archived_revision": "33e6f97c88eeb57aa7015dca28a635f5e5bdaaed",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-frameworks-av": {
+    "path": "frameworks/av",
+    "base": "475269ec44acec82792be6b01fb8e16357d4d2c8",
+    "revision": "4a22ecf7765f85b3f0ec9adf074d6922ac46b16c",
+    "tree": "e35f9aee0f2cc755aec850e8731c7e0b226be067",
+    "original_archived_revision": "4a22ecf7765f85b3f0ec9adf074d6922ac46b16c",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-frameworks-base": {
+    "path": "frameworks/base",
+    "base": "94b4c163b7dfe5ce3607f7bb8456f9573f7de57d",
+    "revision": "ef88c6b9e25213ea3295b2342c7d05e871671082",
+    "tree": "82f7066786e6e1cd9c52af5f0dda34f490001804",
+    "original_archived_revision": "ef88c6b9e25213ea3295b2342c7d05e871671082",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-frameworks-libs-binary_translation": {
+    "path": "frameworks/libs/binary_translation",
+    "base": "1290e88c60304844bd6e1c0778241ca249d64019",
+    "revision": "b4036689cca84b6b29e533349be6940dbd3d052d",
+    "tree": "8e70a4302b817b47e8f0920f8fa1ed04a2a19076",
+    "original_archived_revision": "b4036689cca84b6b29e533349be6940dbd3d052d",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-frameworks-native": {
+    "path": "frameworks/native",
+    "base": "ae266dcb706d083868578cfedce381ef44488a07",
+    "revision": "4ec1e475495cb8c12264e46bc0f02a826a3b12c8",
+    "tree": "4a927bd4adc345082d03a170d2ccf4080e7731c0",
+    "original_archived_revision": "4ec1e475495cb8c12264e46bc0f02a826a3b12c8",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-frameworks-opt-net-wifi": {
+    "path": "frameworks/opt/net/wifi",
+    "base": "12e5aa5f7224b05b6046613967c6d1de75aeaf26",
+    "revision": "edbba589eb34c562c14bd6fe155f3998ef8b9626",
+    "tree": "2acf1a7d1eb1fbab90c63f30ee37385874725b8e",
+    "original_archived_revision": "edbba589eb34c562c14bd6fe155f3998ef8b9626",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-frameworks-rs": {
+    "path": "frameworks/rs",
+    "base": "2efe31da05c6075dd280c9f1b1ea18108971798e",
+    "revision": "89192a816807296eb0a030aea529d06be2b38b4f",
+    "tree": "7143efffc2f488ab7ba4db3fd26d4f0762d59c4a",
+    "original_archived_revision": "89192a816807296eb0a030aea529d06be2b38b4f",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-hardware-interfaces": {
+    "path": "hardware/interfaces",
+    "base": "0162af698935100a590b7359581ac8b1b80693e5",
+    "revision": "a70d0220560e38874bb7f648cbe04fe642f774df",
+    "tree": "66ab300c9a581d9685d6c3717c99bf9892cc48ec",
+    "original_archived_revision": "a70d0220560e38874bb7f648cbe04fe642f774df",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-packages-modules-Virtualization": {
+    "path": "packages/modules/Virtualization",
+    "base": "22f1c9ee92b146e10c8f5e71338618f77ab1631e",
+    "revision": "27e3a2760cd17152755fed4f5e47865894cd342b",
+    "tree": "17f3c996d21ffacd7f36c169c2c0156e4348df35",
+    "original_archived_revision": "0125660c0415618a10d58996203a6b0a03accd7c",
+    "verification": "Source unchanged; oversized historical guest kernels omitted from Git history, and the exact current oversized APK-verification fixture is restored from a checksummed Release asset."
+  },
+  "platform-packages-modules-Wifi": {
+    "path": "packages/modules/Wifi",
+    "base": "67beff9acf0e91046d2a9a36a68cb06ef263d1f1",
+    "revision": "b5f643241bec46352de35e1f69759b8f894cd950",
+    "tree": "877a8605acde0ecae969459beef0ed909da0cc80",
+    "original_archived_revision": "b5f643241bec46352de35e1f69759b8f894cd950",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-packages-services-Car": {
+    "path": "packages/services/Car",
+    "base": "9f04df65daa8b9a65ee05fd4039fe95446874d76",
+    "revision": "6517309a389a7a2982b73c032d154f5b43b14e9a",
+    "tree": "5b4c3ff18989ffbb4478e860a5b02caec9829c4f",
+    "original_archived_revision": "0e5acad11233c219c8a81dd41900b6232d9d9140",
+    "verification": "Current Git tree is byte-identical to the archived source. Only obsolete oversized ARM64/x86 demo libraries were removed from historical commits; original upstream provenance and authors retained."
+  },
+  "platform-packages-services-display_safety": {
+    "path": "packages/services/display_safety",
+    "base": "951af0fd68b691a69bab68542c981291ad4cf1c3",
+    "revision": "0bac2e244190c5c95ffd290a3d6358ef98f47a81",
+    "tree": "b10ef47961c07fa3d4cdd170d2d55145fee6ea5f",
+    "original_archived_revision": "c3d8137445578c9945c923ddca597a5c5d462c52",
+    "verification": "Source unchanged; oversized binary history omitted from Git. Exact current Figma/Blender design assets restored from a checksummed Release asset."
+  },
+  "platform-prebuilts-vndk-v31": {
+    "path": "prebuilts/vndk/v31",
+    "base": "1a059a5a203352d3e0c2fd3ccff5719cc37fc340",
+    "revision": "26016270fdefc8573623974158c72f42d815f113",
+    "tree": "f1263ef1fdd3d2ce81ead504dfab6e046ca8fb24",
+    "original_archived_revision": "26016270fdefc8573623974158c72f42d815f113",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-prebuilts-vndk-v32": {
+    "path": "prebuilts/vndk/v32",
+    "base": "e1ba8043f8368220b412c18ee8392850ab009aae",
+    "revision": "9c2e44cd4ccbd4114f75c3fffadcb6dc290f1c41",
+    "tree": "711a74d2cd1290c739be5f8484c87e5fbb747f2f",
+    "original_archived_revision": "9c2e44cd4ccbd4114f75c3fffadcb6dc290f1c41",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-prebuilts-vndk-v33": {
+    "path": "prebuilts/vndk/v33",
+    "base": "3e8438a4ff535f8f25445527ea70cb71c10e7b18",
+    "revision": "b0c79d9a159d8d9839ce11f284aa3a8985794e3e",
+    "tree": "c3af0f35a1419e07e904e8e4607570d0011e6099",
+    "original_archived_revision": "b0c79d9a159d8d9839ce11f284aa3a8985794e3e",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-prebuilts-vndk-v34": {
+    "path": "prebuilts/vndk/v34",
+    "base": "c6a2527f4e03a89896f9d44331bc6fe91f679aab",
+    "revision": "00fe70cebe3e0c677a37990fe2f4c5641e4fe9c3",
+    "tree": "4b47900fbbf3cbfd44a7faec328b475998ddc3c7",
+    "original_archived_revision": "00fe70cebe3e0c677a37990fe2f4c5641e4fe9c3",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-system-bpf": {
+    "path": "system/bpf",
+    "base": "d68a263039127dc709114802395e57537a02babf",
+    "revision": "c380bb85ba9f96b4e49030c90b936dd9d9c06387",
+    "tree": "1c87ac1c4feaa4c962139a7c3ef15f0864ead28a",
+    "original_archived_revision": "c380bb85ba9f96b4e49030c90b936dd9d9c06387",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-system-core": {
+    "path": "system/core",
+    "base": "545d2487e38192a2ce25040897ced877cf6b4f53",
+    "revision": "4886b97d403372de1e18bb8dc9cf79ef21bf5a60",
+    "tree": "73f4da7962b131553b21467ac973c92688218776",
+    "original_archived_revision": "4886b97d403372de1e18bb8dc9cf79ef21bf5a60",
+    "verification": "byte-identical to build checkout"
+  },
+  "platform-system-software_defined_vehicle-samples": {
+    "path": "system/software_defined_vehicle/samples",
+    "base": "e8cc5f41337edab1e7008729eb3f9442b864404b",
+    "revision": "68287b4718221bc01b192e94d3a1df6b9998977c",
+    "tree": "f8139a7b144c7be6bcf517891665cd4015608839",
+    "original_archived_revision": "68287b4718221bc01b192e94d3a1df6b9998977c",
+    "verification": "byte-identical to build checkout"
+  },
+  "toolchain-llvm-project": {
+    "path": "toolchains/llvm-project",
+    "base": "de03d430485c884861198b25459851f429cbdbad",
+    "revision": "a506ae07982c54006a5b8072ebe5a543694ed952",
+    "tree": "fd7cc537f582e51ffe268229fc5b88b50831600a",
+    "original_archived_revision": "a506ae07982c54006a5b8072ebe5a543694ed952",
+    "verification": "archived C910 canonical SHA256 list plus original layer-6 tests; excludes dirty VL1/VL2 experiment"
+  },
+  "toolchain-rust": {
+    "path": "toolchains/rust",
+    "base": "01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf",
+    "revision": "3e4bb4ca62d97fc18c6c9c3d90f69d7d3778e318",
+    "tree": "c7e5b7ff3d4b5ca45598bd7c9a57443a6dd63597",
+    "original_archived_revision": "3e4bb4ca62d97fc18c6c9c3d90f69d7d3778e318",
+    "verification": "byte-identical to build checkout"
+  },
+  "vendor-thead-opensource-hal_default": {
+    "path": "vendor/thead/opensource/hal_default",
+    "base": "aaf93f10e8ff138784208ea97372d73b69ca5a2a",
+    "revision": "d24c5e7f29452e2b7458e8c2428baa1041b713ab",
+    "tree": "79cc8e79f5a03b04b7af04cd3b266679815020c4",
+    "original_archived_revision": "d24c5e7f29452e2b7458e8c2428baa1041b713ab",
+    "verification": "byte-identical to build checkout"
+  },
+  "vendor-thead-proprietary-config-chipset": {
+    "path": "vendor/thead/proprietary/config/chipset",
+    "base": "44f7c0fd5947795f037b5c9128f7312b26a4d683",
+    "revision": "4bd086dd92476572b719fc47399c7c0f3c3c3bd2",
+    "tree": "81ff4bc31cd1b9579b562fc36566b899e75a94bd",
+    "original_archived_revision": "4bd086dd92476572b719fc47399c7c0f3c3c3bd2",
+    "verification": "byte-identical to build checkout"
+  },
+  "vendor-thead-proprietary-prebuilts-generic": {
+    "path": "vendor/thead/proprietary/prebuilts/generic",
+    "base": "a57274a2230cde178fd697d5061b5b223ad98a1d",
+    "revision": "e83ab1531ad07c81629942ad9847898a49ec71b9",
+    "tree": "24e8a3e5a05bd7c42efc347bacb4ab67e1b4df84",
+    "original_archived_revision": "f7a68ef726b10c366cf0f0da0141b4a619f931db",
+    "verification": "All original source and other files unchanged; oversized Chromium APK restored by checksummed installer. Unaltered complete Git history stored in Release bundle."
+  }
+}

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
+  <default remote="aosp" revision="main-kernel" sync-j="4" />
+  <project name="device/google/cuttlefish_vmm" path="prebuilts/vmm" revision="5b093ef747bf180a3a73813e134ec6c8de489333" upstream="main-kernel" dest-branch="main-kernel" clone-depth="1" />
+  <project name="kernel/build" path="build/kernel" revision="4c1c5783db6f9510371ecab2adc45a3b6995e12e" upstream="main-kernel" dest-branch="main-kernel" groups="ddk">
+    <linkfile src="kleaf/bazel.sh" dest="tools/bazel" />
+    <linkfile src="kleaf/bzlmod/bazel.MODULE.bazel" dest="MODULE.bazel" />
+  </project>
+  <project name="kernel-common" path="common" revision="5e223c0a317c683197934ab5e8160082a061033e" upstream="android17" dest-branch="android17" remote="thead" />
+  <project name="kernel/common-modules/trusty" path="common-modules/trusty" revision="e60e7dfc3f889c4a9fe856911c166463fcb40029" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="kernel/common-modules/virtual-device" path="common-modules/virtual-device" revision="4c1a09fd797efc052160c858c937310290c7b13c" upstream="android-mainline-riscv64" dest-branch="android-mainline-riscv64" />
+  <project name="kernel/common-modules/wonder" path="common-modules/wonder" revision="86ef5efc7d6534d8eb75c732c852a5bd53acff07" upstream="android-mainline" dest-branch="android-mainline" />
+  <project name="kernel/devices/google/raviole" path="devices/google/raviole" revision="255a88424505346b16f0e8436b1c7741529aa1d8" upstream="android-gs-raviole-mainline" dest-branch="android-gs-raviole-mainline" />
+  <project name="kernel/prebuilts/build-tools" path="prebuilts/kernel-build-tools" revision="64fe969afab9c44afa3ce73ee93e470166832c8a" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" clone-depth="1" />
+  <project name="platform/bootable/libbootloader" path="bootable/libbootloader" revision="dd2697463e21c03cda40b8719f3c696fa1879ca0" upstream="gbl-mainline" dest-branch="gbl-mainline" />
+  <project name="platform/external/abseil-cpp" path="external/abseil-cpp" revision="c80edee7cff194f1dc283976f2004d234ccf6ac8" groups="ddk,local::gki-riscv64-missing-ddk-deps" />
+  <project name="platform/external/argp-standalone" path="external/argp-standalone" revision="424b3111fbde0ee5349341f661a8dc54fb690b31" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/arm-trusted-firmware" path="external/arm-trusted-firmware" revision="7abe08e9858c2c028870ac4dace6109be71542a3" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/avb" path="external/avb" revision="c5066a96caa7bf4150c0a8cc8cc14ab81733fdc7" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/bazel-contrib-bazel_features" path="external/bazel-contrib-bazel_features" revision="6b445cbe6af9b3b7dcd589cb8d28d2f401143ae6" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazel-contrib-rules_devicetree" path="external/bazel-contrib-rules_devicetree" revision="bc0509e0ae6195f9a47764c3d846459f713fa741" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazel-contrib-supply-chain" path="external/bazel-contrib-supply-chain" revision="d272ef31b0c4f743fdc5fe7a211ddf47816585e8" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazel-skylib" path="external/bazel-skylib" revision="5b1ebf307a37c3cd369e2bcf2f5b7e9cbfb79b36" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-bazel-central-registry" path="external/bazelbuild-bazel-central-registry" revision="ba06df44c963774fedaca97f59c9f5f6d7d4524e" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-platforms" path="external/bazelbuild-platforms" revision="41b8b91d2eab15a3573b740358dd4b1b3f7d5097" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-rules_cc" path="external/bazelbuild-rules_cc" revision="c4e256680710e65f1305b8ded16e5394a0572dca" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-rules_license" path="external/bazelbuild-rules_license" revision="8252dd056e1381eb60300c4158522318eb2eaafd" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-rules_pkg" path="external/bazelbuild-rules_pkg" revision="d7c6270a04f291875abac6fd218575b2a45ba09d" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-rules_python" path="external/bazelbuild-rules_python" revision="571592f347f363a88facb851536befcbf6f73700" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-rules_rust" path="external/bazelbuild-rules_rust" revision="5975ad7ee75212b585f75da60444fcc4a43ff5f3" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/bazelbuild-rules_shell" path="external/bazelbuild-rules_shell" revision="32f339bedfd8d37f33d4f0790fbad66b9829dbc9" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/boringssl" path="external/boringssl" revision="88520a67464ee18134178cf3cf29d2537ed37301" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/compiler-rt" path="external/compiler-rt" revision="fca7d4641819e50d89374a1dadb615bd8991ebf4" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/dtc" path="external/dtc" revision="6ab7e35a241f6b1513c4701c66fe479ab040eafb" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/dwarves" path="external/dwarves" revision="689ce5afc46d986e6360d9d1abd9dc26e197a8e1" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/elfutils" path="external/elfutils" revision="05a8bfdceb8418560662a8c83b1d8997ca8c0299" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/googletest" path="external/googletest" revision="db9a5a6d0478a3fbe75be41782232595f8f6e041" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/kmod" path="external/kmod" revision="dda7839f3e2d13e1cc241e2fee020452552f88d2" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/libcap" path="external/libcap" revision="6218b907de3482f8280d6a7ba803f5f70fe41eee" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/libcap-ng" path="external/libcap-ng" revision="d6354135aaa17ef9d3405a838408c5f0fc2d4366" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/ltp" path="test/ltp" revision="c82ca18c4d4354ea5e7df670f1f96895cad02f8f" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/lz4" path="external/lz4" revision="6fa8b6928ae968ef70ea1d7b8a94b6fc4ed638a5" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/mtools" path="external/mtools" revision="f8b0c55d92741eae113cdf2177e49f53f0bd3fb5" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/nasm" path="external/nasm" revision="124d643cb3139b8344fe93b1996dd1010002a38c" groups="local::gki-riscv64-missing-ddk-deps" />
+  <project name="platform/external/obstack" path="external/obstack" revision="9cbd2e3e4e8ed5f9923a6cee3e51fcb92b456c42" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/open-dice" path="external/open-dice" revision="d529b1201806a9492b60ce163079a47942bbacb1" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/pigz" path="external/pigz" revision="9bc9fa17d499ddde88b77820f6d063e16c0cdd42" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/protobuf" path="external/protobuf" revision="ef5c9a644b45f57b2c78fdf93af1bfca0b3f4000" groups="ddk,local::gki-riscv64-missing-ddk-deps" />
+  <project name="platform/external/python/absl-py" path="external/python/absl-py" revision="5b421cafc7c99c63c8c5221f6d256dde1c27087b" upstream="main-kernel" dest-branch="main-kernel" groups="ddk-external" />
+  <project name="platform/external/rust/android-crates-io" path="external/rust/android-crates-io" revision="671d7615a9c824f75eb547eba47f733027cf6c88" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/stg" path="external/stg" revision="a2ee027ef720a689c0ae7ae71ccd01f3524e7ddc" groups="ddk,local::gki-riscv64-missing-ddk-deps" />
+  <project name="platform/external/toybox" path="external/toybox" revision="ada7dbbb1b315ae23adfe00f77c82ca3af9842a1" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/u-boot" path="u-boot" revision="76d87268e9886e29f11e1a70164d5b5e505208a4" upstream="u-boot-mainline" dest-branch="u-boot-mainline" />
+  <project name="platform/external/virtio-media" path="common-modules/virtio-media" revision="8adc89d5112ff5bf64d4ad2f8d7714f42762849f" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="platform/external/zlib-madler" path="external/zlib" revision="89ccaf20319f858e69bb70eac61526732a480d53" groups="ddk,local::gki-riscv64-missing-ddk-deps" />
+  <project name="platform/external/zopfli" path="external/zopfli" revision="feec88f5d5e2b9ab0c0c3ae1e4ed543f105426aa" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/external/zstd" path="external/zstd" revision="42f611538c728e8f2f1cd9ac4b726a30bec83370" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" />
+  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="5b1308d2388c7161edae81124dd086916d0a1a6c" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" clone-depth="1" />
+  <project name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="6cf10f22dc76e430b5f5afd1eed77b09752ff4af" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" clone-depth="1" />
+  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="b8c5c3eeb0292aacc5223581b1cb885b8fb4cb6b" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" clone-depth="1" />
+  <project name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" revision="35c2e878b0c3af33eb7bf769c9f8ecebc54e26ef" upstream="gbl-mainline" dest-branch="gbl-mainline" clone-depth="1" />
+  <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="083aa5efe67a40d8c300bfd02293659341975042" upstream="main-kernel" dest-branch="main-kernel" clone-depth="1" />
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="e94c88168b46019d650d472d5ebb4788f233c881" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" clone-depth="1" />
+  <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="317f01f3deebab8f1e0630e7bd905209e1e4e6b6" upstream="main-kernel" dest-branch="main-kernel" clone-depth="1" />
+  <project name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" revision="b43dc974b874d58e939c51c774276d3ed173e4e1" upstream="main-kernel" dest-branch="main-kernel" clone-depth="1" />
+  <project name="platform/prebuilts/rust-toolchain/linux-musl-x86" path="prebuilts/rust-toolchain/linux-musl-x86" revision="7b4a5d298586b091637df6a94809a319341dc4be" groups="ddk,local::gki-riscv64-missing-ddk-deps" clone-depth="1" />
+  <project name="platform/prebuilts/rust-toolchain/linux-x86" path="prebuilts/rust-toolchain/linux-x86" revision="59ab978c5c19c2a2cee2833399606b39b50b69cf" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" clone-depth="1" />
+  <project name="platform/system/libufdt" path="external/libufdt" revision="131ee2db53ad7d9d4756555567894b01107cb26e" upstream="main-kernel" dest-branch="main-kernel" />
+  <project name="toolchain/prebuilts/ndk/r27" path="prebuilts/ndk-r27" revision="c1f08c69904869adc0759667e0ffa683d57025fa" upstream="main-kernel" dest-branch="main-kernel" groups="ddk" clone-depth="1" />
+  <superproject name="kernel/superproject" revision="common-android-mainline-riscv64" />
+  <remote name="thead" fetch="https://github.com/thead-android/" />
+</manifest>

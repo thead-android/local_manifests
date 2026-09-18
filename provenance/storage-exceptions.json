@@ -1,0 +1,32 @@
+{
+  "kernel-common": {
+    "head": "5e223c0a317c683197934ab5e8160082a061033e",
+    "tree": "1f0a666d693e52f4b50068f259b68724184c2e5a",
+    "original_archived_head": "aea50e66e9e486de36216818b7d2d924543bfe10",
+    "verification_basis": "Exact frozen R2 plus touch source tree. Full upstream source snapshot at 648fd74a plus 26 separate port commits; port authors, messages and trees retained. Earlier upstream ancestry remains available upstream/local, not reimported into this branch."
+  },
+  "platform-packages-services-Car": {
+    "head": "6517309a389a7a2982b73c032d154f5b43b14e9a",
+    "tree": "5b4c3ff18989ffbb4478e860a5b02caec9829c4f",
+    "original_archived_head": "0e5acad11233c219c8a81dd41900b6232d9d9140",
+    "verification_basis": "Current Git tree is byte-identical to the archived source. Only obsolete oversized ARM64/x86 demo libraries were removed from historical commits; original upstream provenance and authors retained."
+  },
+  "platform-packages-modules-Virtualization": {
+    "head": "27e3a2760cd17152755fed4f5e47865894cd342b",
+    "tree": "17f3c996d21ffacd7f36c169c2c0156e4348df35",
+    "original_archived_head": "0125660c0415618a10d58996203a6b0a03accd7c",
+    "verification_basis": "Source unchanged; oversized historical guest kernels omitted from Git history, and the exact current oversized APK-verification fixture is restored from a checksummed Release asset."
+  },
+  "platform-packages-services-display_safety": {
+    "head": "0bac2e244190c5c95ffd290a3d6358ef98f47a81",
+    "tree": "b10ef47961c07fa3d4cdd170d2d55145fee6ea5f",
+    "original_archived_head": "c3d8137445578c9945c923ddca597a5c5d462c52",
+    "verification_basis": "Source unchanged; oversized binary history omitted from Git. Exact current Figma/Blender design assets restored from a checksummed Release asset."
+  },
+  "vendor-thead-proprietary-prebuilts-generic": {
+    "head": "e83ab1531ad07c81629942ad9847898a49ec71b9",
+    "tree": "24e8a3e5a05bd7c42efc347bacb4ab67e1b4df84",
+    "original_archived_head": "f7a68ef726b10c366cf0f0da0141b4a619f931db",
+    "verification_basis": "All original source and other files unchanged; oversized Chromium APK restored by checksummed installer. Unaltered complete Git history stored in Release bundle."
+  }
+}
