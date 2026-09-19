@@ -10,10 +10,10 @@
   "device-thead-th1520": {
     "path": "device/thead/th1520",
     "base": "d5435aa23a641c23eef3f7553df94f5098da6b81",
-    "revision": "deed294ed68a1474fcb3e31c1d345b90f82d1314",
-    "tree": "2ce49a3e1109a7ba23d5d3bbeab302d14c12ea15",
+    "revision": "1b89641e8abd35a37b95b2d9fc6ecf1dc6fa0f13",
+    "tree": "6abea24af72ba3f331a9e0ced3fbc92c56f2cdb6",
     "original_archived_revision": "deed294ed68a1474fcb3e31c1d345b90f82d1314",
-    "verification": "byte-identical to build checkout"
+    "verification": "archived source plus HDMI HPD override fix; unplugged runtime detection verified, new boot image not flashed"
   },
   "device-thead-th1520-lichee_pi_4a": {
     "path": "device/thead/th1520/lichee_pi_4a",
