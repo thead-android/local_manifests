@@ -414,7 +414,7 @@
   <project name="platform/external/marisa-trie" path="external/marisa-trie" revision="82e515bcaac323a3f745567b65f25816ec931e9a" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/mbedtls" path="external/mbedtls" revision="dd118e8e248588871479dd3b82fab993a58c99d6" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="3e0189c4d3be5272398b1ea6ad2f223a973d0ea2" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
-  <project name="platform-external-mesa3d" path="external/mesa3d" revision="f15c4205c7125258452b0757218e02a49d9761d0" upstream="android17" dest-branch="android17" groups="pdk-cw-fs,pdk-fs" remote="thead" />
+  <project name="platform-external-mesa3d" path="external/mesa3d" revision="31c2c6edf3dafb78b4d0fb4af9399e1767d73d33" upstream="lpi4a-mesa-main-20260918" dest-branch="lpi4a-mesa-main-20260918" groups="pdk-cw-fs,pdk-fs" remote="thead" />
   <project name="platform/external/mime-support" path="external/mime-support" revision="9d71d482603aac054815958c9834ae1cd036f024" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/minidns" path="external/minidns" revision="25200e92a0e8ff40266d2b23e6cae835fccc2274" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform-external-minigbm" path="external/minigbm" revision="30337d6329c005abe1286dfaf746ce0f5356f9e7" upstream="android17" dest-branch="android17" groups="pdk" remote="thead" />
@@ -1118,7 +1118,7 @@
   <superproject name="platform/superproject" />
   <contactinfo bugurl="go/repo-bug" />
   <remote name="thead" fetch="https://github.com/thead-android/" />
-  <project name="prebuilts-c910" path="prebuilts/thead" remote="thead" revision="b222df6e5f0f3265a259478b64097ee8ffe26b52" upstream="main" />
-  <project name="toolchain-llvm-project" path="toolchains/llvm-project" remote="thead" revision="a506ae07982c54006a5b8072ebe5a543694ed952" upstream="android17" groups="notdefault,toolchain-src" />
+  <project name="prebuilts-c910" path="prebuilts/thead" remote="thead" revision="adcbc7dc8966566645d92c2649d6a0114e09d907" upstream="mesa-20260919" />
+  <project name="toolchain-llvm-project" path="toolchains/llvm-project" remote="thead" revision="217e452c13201d5a78eca139f46d74aa1220568e" upstream="lpi4a-mesa-mask-fix-20260919" groups="notdefault,toolchain-src" />
   <project name="toolchain-rust" path="toolchains/rust" remote="thead" revision="3e4bb4ca62d97fc18c6c9c3d90f69d7d3778e318" upstream="android17" groups="notdefault,toolchain-src" />
 </manifest>

@@ -16,12 +16,13 @@ for input in uImage th1520-lichee-pi-4a.dtb modules/powervr.ko modules/etnaviv.k
     [[ -s "_prebuilts/$stage/$input" ]] || { echo "missing matching kernel input: $input" >&2; exit 1; }
 done
 export OUT_DIR=${OUT_DIR:-out-lpi4a}
-export LLVM_PREBUILTS_VERSION=clang-c910-llvm22-cubic-store-fix
+export LLVM_PREBUILTS_VERSION=clang-c910-llvm22-mesa-20260919
+export SOONG_NINJA=${SOONG_NINJA:-ninja}
 export RUST_PREBUILTS_VERSION=1.93.1-c910-llvm22
 export TARGET_PREBUILT_KERNEL="_prebuilts/$stage/uImage"
 export TARGET_PREBUILT_DTB="_prebuilts/$stage/th1520-lichee-pi-4a.dtb"
 export TARGET_PREBUILT_KERNEL_MODULES="_prebuilts/$stage/modules"
-export BUILD_NUMBER=${BUILD_NUMBER:-lpi4a.20260918.archive}
+export BUILD_NUMBER=${BUILD_NUMBER:-lpi4a.20260919.mesa}
 source build/envsetup.sh
 lunch lichee_pi_4a-trunk_staging-userdebug
 m -j"${JOBS:-8}"

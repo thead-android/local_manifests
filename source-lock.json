@@ -91,11 +91,12 @@
   },
   "platform-external-mesa3d": {
     "path": "external/mesa3d",
-    "base": "875160ed32cc5bc32777fa04870a0a57ed38c987",
-    "revision": "f15c4205c7125258452b0757218e02a49d9761d0",
-    "tree": "d00a3b5dfd4de4ed3dcf5a8ddd636cbeea98f60e",
+    "base": "9acc3e3aceb6addc499ee74b62021ee8e17ec34e",
+    "revision": "31c2c6edf3dafb78b4d0fb4af9399e1767d73d33",
+    "tree": "aadf216bd2a73ff35452ea888a105e15bd661110",
     "original_archived_revision": "f15c4205c7125258452b0757218e02a49d9761d0",
-    "verification": "byte-identical to build checkout"
+    "runtime_tested_revision": "2d5c5aa8da13f1574f6653e52d2a33421003aabb",
+    "verification": "Fresh GitHub Mesa checkout builds vulkan.powervr successfully in isolated AOSP Soong output with the released C910 Clang/LLD. Artifact SHA256 614f0ceb3d12a17d1543b3314dfa2835e8a6963eada82e2e549b4b1e5a655fd5. Prior standalone runtime and new build acceptance boundaries are recorded in validation/lpi4a-mesa-20260919.md; no new full-image/flash acceptance."
   },
   "platform-external-minigbm": {
     "path": "external/minigbm",
@@ -276,10 +277,20 @@
   "toolchain-llvm-project": {
     "path": "toolchains/llvm-project",
     "base": "de03d430485c884861198b25459851f429cbdbad",
-    "revision": "a506ae07982c54006a5b8072ebe5a543694ed952",
-    "tree": "fd7cc537f582e51ffe268229fc5b88b50831600a",
+    "revision": "217e452c13201d5a78eca139f46d74aa1220568e",
+    "tree": "7e6d790ad1535535af1ca07b5e9d81feae01cc0d",
     "original_archived_revision": "a506ae07982c54006a5b8072ebe5a543694ed952",
-    "verification": "archived C910 canonical SHA256 list plus original layer-6 tests; excludes dirty VL1/VL2 experiment"
+    "verification": "Archived C910 layers plus four mask-correctness commits, including exact historical VL1/VL2 source parity restoration. Scalar-swizzle, real Skia shader replay and new-LLD ThinLTO tests pass; see validation/lpi4a-mesa-20260919.md."
+  },
+  "prebuilts-c910": {
+    "path": "prebuilts/thead",
+    "revision": "adcbc7dc8966566645d92c2649d6a0114e09d907",
+    "tree": "9582cc7fd122e4e16ca19b913062c4d697440048",
+    "clang_version": "clang-c910-llvm22-mesa-20260919",
+    "clang_source": "217e452c13201d5a78eca139f46d74aa1220568e",
+    "clang_archive_sha256": "9e424ee9ae422927dea8e3666f34b333826348b81730e93a13e013005cb0fe28",
+    "rust_version": "1.93.1-c910-llvm22",
+    "verification": "Fresh GitHub asset download, installation and complete file-inventory verification passed. Clang/LLD/llc contain the mask fixes; Rust is unchanged and does not include these new LLVM changes."
   },
   "toolchain-rust": {
     "path": "toolchains/rust",

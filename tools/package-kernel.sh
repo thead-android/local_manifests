@@ -72,7 +72,7 @@ cat <<EOF
 
 Build with:
   export OUT_DIR=out-lpi4a
-  export LLVM_PREBUILTS_VERSION=clang-c910-llvm22-cubic-store-fix
+  export LLVM_PREBUILTS_VERSION=clang-c910-llvm22-mesa-20260919
   export RUST_PREBUILTS_VERSION=1.93.1-c910-llvm22
   export TARGET_PREBUILT_KERNEL=_prebuilts/$stage_name/uImage
   export TARGET_PREBUILT_DTB=_prebuilts/$stage_name/th1520-lichee-pi-4a.dtb

@@ -44,6 +44,11 @@ binary-compatible with the C910's XTheadVector / RVV 0.7.1 implementation. The
 installer downloads immutable Release assets and checks their hashes; it never
 replaces a different existing toolchain silently.
 
+The current Mesa update uses `clang-c910-llvm22-mesa-20260919`, including the
+matching fixed LLD for ThinLTO. Rust remains `1.93.1-c910-llvm22`; its backend
+does not yet include the new Mesa-triggered LLVM fixes. See the exact test and
+build boundaries in [Mesa/compiler validation](validation/lpi4a-mesa-20260919.md).
+
 ## Kernel and modules
 
 Use a separate checkout to avoid collisions between Android and Kleaf layouts:
