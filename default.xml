@@ -4,7 +4,7 @@
   <remote name="thead-c910-board" fetch="https://gitee.com/thead-android/" />
   <default remote="aosp" revision="android17-release" sync-j="4" />
   <project name="device-thead-common" path="device/thead/common" remote="thead" revision="54b31c06be13e96e8c6e8308f794db314d980888" upstream="android17" dest-branch="android17" groups="local::c910-board" />
-  <project name="device-thead-th1520" path="device/thead/th1520" remote="thead" revision="1b89641e8abd35a37b95b2d9fc6ecf1dc6fa0f13" upstream="android17" dest-branch="android17" groups="local::c910-board" />
+  <project name="device-thead-th1520" path="device/thead/th1520" remote="thead" revision="4992b98175b1d4f2ace40147543fc62d0e52489a" upstream="android17" dest-branch="android17" groups="local::c910-board" />
   <project name="device-thead-th1520-kernel" path="device/thead/th1520-kernel" remote="thead-c910-board" revision="e3b294947bb92e1dbab49d6dba9fded2466d7edd" upstream="thead-android_dev" dest-branch="thead-android_dev" groups="local::c910-board" clone-depth="1" />
   <project name="device-thead-th1520-lichee_pi_4a" path="device/thead/th1520/lichee_pi_4a" remote="thead" revision="4e4fe1cf0bddf7538f36ad987f96d26a6a641e7b" upstream="android17" dest-branch="android17" groups="local::c910-board" />
   <project name="device/amlogic/yukawa" revision="cfa1b7f9bf57241b719ea2b1ddcfdd76f26079b9" upstream="android17-release" dest-branch="android17-release" groups="device,pdk,yukawa" />
@@ -181,7 +181,7 @@
   <project name="platform/external/dokka" path="external/dokka" revision="d8345c012eec458555e2c027eff03a0f2726a19e" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/double-conversion" path="external/double-conversion" revision="d1eefb5e4345307e4c591d340f51951236f55f31" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/downloader" path="external/downloader" revision="8ed02f3b4f3393e617141a55f9d80a0e8b1ef57a" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
-  <project name="platform-external-drm_hwcomposer" path="external/drm_hwcomposer" revision="bae12e647aa8329fc527854b3f895497d572fdb5" upstream="android17" dest-branch="android17" groups="drm_hwcomposer,pdk-fs" remote="thead" />
+  <project name="platform-external-drm_hwcomposer" path="external/drm_hwcomposer" revision="3fd8bb0cb7bf31d1f411b9bd8564e86686964b19" upstream="android17" dest-branch="android17" groups="drm_hwcomposer,pdk-fs" remote="thead" />
   <project name="platform/external/dtc" path="external/dtc" revision="38031c62ca17368fa8a2358ce562782f63402d15" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/dynamic_depth" path="external/dynamic_depth" revision="a723797020a551c75726e8d91e068087ea489757" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="3eb17241db7cd4408cc1bce9d25b602465ace8ff" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
