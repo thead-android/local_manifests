@@ -10,28 +10,28 @@
   "device-thead-th1520": {
     "path": "device/thead/th1520",
     "base": "d5435aa23a641c23eef3f7553df94f5098da6b81",
-    "revision": "4992b98175b1d4f2ace40147543fc62d0e52489a",
-    "tree": "b7125a9d2c568c78ae12a9bbc1faa0f1eaf3b5c8",
+    "revision": "df63c7927ecb11fabd850802b92a52866efc0b36",
+    "tree": "999a8cebf53b4b4e2e43705ecb94369c58e34a66",
     "original_archived_revision": "deed294ed68a1474fcb3e31c1d345b90f82d1314",
-    "verification": "archived source plus HDMI HPD override fix and opt-in GC620 composition primitives; board pixel/fence/wake tests pass, default HWC unchanged, no new boot image flashed"
+    "verification": "Candidate DDK HAL4/AIDL bridge, CMA-only allocation with public-heap client context, GC620 HWC selection, RGBA cursor property, HDMI HPD and enforcing policy. Complete component and sepolicy build passes. Runtime composition/encoding tests pass; an unexplained cold reset remains a stability gate. No new image flashed yet."
   },
   "device-thead-th1520-lichee_pi_4a": {
     "path": "device/thead/th1520/lichee_pi_4a",
     "base": "1542ff9fc6b81fe2bd8d166ac8bfddde7cf877d4",
-    "revision": "4e4fe1cf0bddf7538f36ad987f96d26a6a641e7b",
-    "tree": "52186a1f8415dab72aaa5ee58225ce1d138a1dab",
+    "revision": "56944f58554cc457911c182862ad43dda15f82c3",
+    "tree": "ef36ef03d939eebd21620c9f828636302cda1cf5",
     "original_archived_revision": "4e4fe1cf0bddf7538f36ad987f96d26a6a641e7b",
-    "verification": "archived product source plus exact 20260917 touch integration"
+    "verification": "Archived product/touch source plus DDK Vulkan/gralloc selection, Android-sync KMD load and narrow observed Codec2 socket allowances. Touch-input guard fixed for product inheritance. Candidate image cold-boot validation pending."
   },
   "kernel-common": {
     "path": "common",
     "base": "648fd74a4d2eaed87fe242e26506f724619dacff",
-    "revision": "d867ce4aa96d8ec1bfab8469e0e5b7dcd18a278a",
-    "tree": "9e839110850a9cb3c726834a038321ac28630a1c",
+    "revision": "c61e387684fe38888b942fe42d6418041f5f7a80",
+    "tree": "9395e2482bd5d398c0d298c7bedfb6c413d39699",
     "original_archived_revision": "aea50e66e9e486de36216818b7d2d924543bfe10",
-    "previous_published_revision": "5e223c0a317c683197934ab5e8160082a061033e",
+    "previous_published_revision": "d867ce4aa96d8ec1bfab8469e0e5b7dcd18a278a",
     "backport_reference": "revyos/linux acbd3c3f6d7e5610b7343dd55224bfe5e079c7e9",
-    "verification": "Frozen R2/touch source plus seven DRM backports. PowerVR UAPI/6000 concurrent VM map-unmap pairs/GPU pixel-hash tests passed; Verisilicon DSI modeset, six cursor positions and Android restart passed via separate temporary module tests. No new full-image/cold-boot validation. See validation/lpi4a-drm-20260918.md. Earlier upstream ancestry remains upstream/local."
+    "verification": "Keeps the previously validated seven DRM backports and imports the exact Android-sync DDK subtree from adaptation a745203. The DDK was tested as an external module against the running 7.1 kernel, with 285 symbol CRCs and KCFI. The incremental image uses its archived kernel baseline; this is not a clean full-kernel image rebuild claim. See validation/lpi4a-vendor-stack-20260920.md."
   },
   "platform-art": {
     "path": "art",
@@ -76,10 +76,10 @@
   "platform-external-drm_hwcomposer": {
     "path": "external/drm_hwcomposer",
     "base": "87daba89b05fabc7f1e9316e3f283f19fd0c45cd",
-    "revision": "3fd8bb0cb7bf31d1f411b9bd8564e86686964b19",
-    "tree": "a4d8aed63fa9f37cfa1fe84e1caec96897b7840b",
+    "revision": "b6d29302b2d66d357c9e5d89cafc5bd3ca975d6e",
+    "tree": "45bc6e8d1f77c1dfc87e00351ed8a6a6007cf3f3",
     "original_archived_revision": "bae12e647aa8329fc527854b3f895497d572fdb5",
-    "verification": "archived source plus optional GC620 HWC; real KMS/SF readback within 1 RGB LSB and sleep/wake pass; ordinary HWC build passes, G2D is not the default product target"
+    "verification": "GC620 HWC actual scanout comparison within 1 RGB LSB and sleep/wake pass on open and DDK stacks. Candidate adds unique executable/init/VINTF install paths; production component build passes."
   },
   "platform-external-libopus": {
     "path": "external/libopus",
@@ -117,10 +117,10 @@
   "platform-external-v4l2_codec2": {
     "path": "external/v4l2_codec2",
     "base": "1226adff48e591f0b6cac8d3a271a7324d8fc0ec",
-    "revision": "0197bae5764b28a090512a11007c775b757264c5",
-    "tree": "c3c84b6e40d8a648dafbcaefc0de4e612840fbff",
+    "revision": "d054993d156673649e3cd86d34e1412d0d24e223",
+    "tree": "a0eb2cb3aa47e489523896b4bd2c81da088a761f",
     "original_archived_revision": "0197bae5764b28a090512a11007c775b757264c5",
-    "verification": "byte-identical to build checkout"
+    "verification": "Factory capability-cache mutex, mapper-backed GC620 import, metadata-FD exclusion and 64-byte NV12 pitch. Decoded 544x1088 UHID/Opus capture is clean, GC620 used without CPU fallback; minigbm regression capture passes. Not a full MediaCodec CTS claim."
   },
   "platform-external-wpa_supplicant_8": {
     "path": "external/wpa_supplicant_8",
@@ -157,10 +157,10 @@
   "platform-frameworks-native": {
     "path": "frameworks/native",
     "base": "ae266dcb706d083868578cfedce381ef44488a07",
-    "revision": "4ec1e475495cb8c12264e46bc0f02a826a3b12c8",
-    "tree": "4a927bd4adc345082d03a170d2ccf4080e7731c0",
+    "revision": "694264c91e0404da0dabd549df867305e30917b6",
+    "tree": "36ea459a83c63540f4ea4fd7196c209f547adb83",
     "original_archived_revision": "4ec1e475495cb8c12264e46bc0f02a826a3b12c8",
-    "verification": "byte-identical to build checkout"
+    "verification": "Preserves archived upfront DDK swapchain allocation and adds opt-in real RGBA cursor creation. UHID motion and encoded cursor pass without SurfaceFlinger restart."
   },
   "platform-frameworks-opt-net-wifi": {
     "path": "frameworks/opt/net/wifi",

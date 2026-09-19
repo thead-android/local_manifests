@@ -25,7 +25,7 @@ Allow several hundred GiB for sources, intermediates and toolchains.
 
 ```sh
 mkdir android17-lpi4a && cd android17-lpi4a
-repo init -u https://github.com/thead-android/local_manifests -b android17
+repo init -u https://github.com/thead-android/local_manifests -b lpi4a-vendor-stack-20260920
 repo sync -c -j8
 python3 prebuilts/thead/install.py --root "$PWD"
 python3 vendor/thead/proprietary/prebuilts/generic/install-archived-apk.py
@@ -51,13 +51,19 @@ build boundaries in [Mesa/compiler validation](validation/lpi4a-mesa-20260919.md
 
 ## Kernel and modules
 
+This branch selects the DDK/GC620 **integration candidate**. Read
+[its validation limits](validation/lpi4a-vendor-stack-20260920.md) before use.
+The stable/default manifest is not changed by publishing this candidate.
+
 Use a separate checkout to avoid collisions between Android and Kleaf layouts:
 
 ```sh
 mkdir ../kernel-lpi4a && cd ../kernel-lpi4a
-repo init -u https://github.com/thead-android/local_manifests -b android17 -m kernel.xml
+repo init -u https://github.com/thead-android/local_manifests -b lpi4a-vendor-stack-20260920 -m kernel.xml
 repo sync -c -j8
 tools/bazel run //common:lpi4a_dist
+# Set KERNEL_OUT to that build's prepared output and keep its compiler environment.
+bash .repo/manifests/tools/build-pvrsrvkm.sh common "$KERNEL_OUT" out/lpi4a/dist
 bash .repo/manifests/tools/package-kernel.sh ../android17-lpi4a out/lpi4a/dist /usr/bin/mkimage lpi4a-publication
 ```
 

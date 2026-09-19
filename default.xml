@@ -4,9 +4,9 @@
   <remote name="thead-c910-board" fetch="https://gitee.com/thead-android/" />
   <default remote="aosp" revision="android17-release" sync-j="4" />
   <project name="device-thead-common" path="device/thead/common" remote="thead" revision="54b31c06be13e96e8c6e8308f794db314d980888" upstream="android17" dest-branch="android17" groups="local::c910-board" />
-  <project name="device-thead-th1520" path="device/thead/th1520" remote="thead" revision="4992b98175b1d4f2ace40147543fc62d0e52489a" upstream="android17" dest-branch="android17" groups="local::c910-board" />
+  <project name="device-thead-th1520" path="device/thead/th1520" remote="thead" revision="df63c7927ecb11fabd850802b92a52866efc0b36" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="local::c910-board" />
   <project name="device-thead-th1520-kernel" path="device/thead/th1520-kernel" remote="thead-c910-board" revision="e3b294947bb92e1dbab49d6dba9fded2466d7edd" upstream="thead-android_dev" dest-branch="thead-android_dev" groups="local::c910-board" clone-depth="1" />
-  <project name="device-thead-th1520-lichee_pi_4a" path="device/thead/th1520/lichee_pi_4a" remote="thead" revision="4e4fe1cf0bddf7538f36ad987f96d26a6a641e7b" upstream="android17" dest-branch="android17" groups="local::c910-board" />
+  <project name="device-thead-th1520-lichee_pi_4a" path="device/thead/th1520/lichee_pi_4a" remote="thead" revision="56944f58554cc457911c182862ad43dda15f82c3" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="local::c910-board" />
   <project name="device/amlogic/yukawa" revision="cfa1b7f9bf57241b719ea2b1ddcfdd76f26079b9" upstream="android17-release" dest-branch="android17-release" groups="device,pdk,yukawa" />
   <project name="device/amlogic/yukawa-kernel" revision="ff822d1ec33dc9a8225d34a1c576f8af26fdb0fd" upstream="android17-release" dest-branch="android17-release" groups="device,pdk,yukawa" clone-depth="2" />
   <project name="device/common" revision="9e48dd8859c3eb6b911bcc9d1ce48a4278bd03f5" upstream="android17-release" dest-branch="android17-release" groups="pdk,pdk-cw-fs" />
@@ -181,7 +181,7 @@
   <project name="platform/external/dokka" path="external/dokka" revision="d8345c012eec458555e2c027eff03a0f2726a19e" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/double-conversion" path="external/double-conversion" revision="d1eefb5e4345307e4c591d340f51951236f55f31" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/downloader" path="external/downloader" revision="8ed02f3b4f3393e617141a55f9d80a0e8b1ef57a" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
-  <project name="platform-external-drm_hwcomposer" path="external/drm_hwcomposer" revision="3fd8bb0cb7bf31d1f411b9bd8564e86686964b19" upstream="android17" dest-branch="android17" groups="drm_hwcomposer,pdk-fs" remote="thead" />
+  <project name="platform-external-drm_hwcomposer" path="external/drm_hwcomposer" revision="b6d29302b2d66d357c9e5d89cafc5bd3ca975d6e" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="drm_hwcomposer,pdk-fs" remote="thead" />
   <project name="platform/external/dtc" path="external/dtc" revision="38031c62ca17368fa8a2358ce562782f63402d15" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/dynamic_depth" path="external/dynamic_depth" revision="a723797020a551c75726e8d91e068087ea489757" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="3eb17241db7cd4408cc1bce9d25b602465ace8ff" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
@@ -607,7 +607,7 @@
   <project name="platform/external/usb-ids" path="external/usb-ids" revision="c69b20f6f7081fa88fd7cabf15fcfbd9d10b35fd" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/uwb" path="external/uwb" revision="3f12770ae3933ff040d024e3d3aa9918fcc115bb" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/v4l-utils" path="external/v4l-utils" revision="c39be2de7d3867cacd891e56d625b205bfd7758b" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
-  <project name="platform-external-v4l2_codec2" path="external/v4l2_codec2" revision="0197bae5764b28a090512a11007c775b757264c5" upstream="android17" dest-branch="android17" groups="pdk" remote="thead" />
+  <project name="platform-external-v4l2_codec2" path="external/v4l2_codec2" revision="d054993d156673649e3cd86d34e1412d0d24e223" upstream="lpi4a-vendor-gralloc-20260920" dest-branch="lpi4a-vendor-gralloc-20260920" groups="pdk" remote="thead" />
   <project name="platform/external/vboot_reference" path="external/vboot_reference" revision="22b6bf0bec7e2f515695cbe5cc0863a7e324fd2b" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/virtio-media" path="external/virtio-media" revision="b6071a2fbc949f954cef5f679615cb9ea972fd79" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/vixl" path="external/vixl" revision="ce11d32c9cc395fd0fd961e30b1ab56e06fd30dc" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
@@ -651,7 +651,7 @@
   <project name="platform/frameworks/libs/systemui" path="frameworks/libs/systemui" revision="11e04f60f563aed48e4ec080bd7bde06bae1b2f3" upstream="android17-release" dest-branch="android17-release" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <project name="platform/frameworks/minikin" path="frameworks/minikin" revision="915f1232cff2f38be1ed2273769c5ffd00928dff" upstream="android17-release" dest-branch="android17-release" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/frameworks/multidex" path="frameworks/multidex" revision="5d0f52831fc7de91d1b74aa737e748e740338a9e" upstream="android17-release" dest-branch="android17-release" groups="pdk-cw-fs,pdk-fs" />
-  <project name="platform-frameworks-native" path="frameworks/native" revision="4ec1e475495cb8c12264e46bc0f02a826a3b12c8" upstream="android17" dest-branch="android17" groups="pdk,sysui-studio" remote="thead" />
+  <project name="platform-frameworks-native" path="frameworks/native" revision="694264c91e0404da0dabd549df867305e30917b6" upstream="lpi4a-vendor-wsi-20260919" dest-branch="lpi4a-vendor-wsi-20260919" groups="pdk,sysui-studio" remote="thead" />
   <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="958affd2e0b70e659f5e5a32157e0ba3b7b558c1" upstream="android17-release" dest-branch="android17-release" groups="pdk-fs" />
   <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="05dcdbfcff3e74a73b7047f3f90c625e41392481" upstream="android17-release" dest-branch="android17-release" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="2bb3349c1a84b9b15c5ef05ef9c2e3dc6dde427a" upstream="android17-release" dest-branch="android17-release" groups="pdk-cw-fs,pdk-fs" />

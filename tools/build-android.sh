@@ -12,7 +12,7 @@ cd "$root"
 python3 prebuilts/thead/install.py --root "$root" --verify-only
 python3 vendor/thead/proprietary/prebuilts/generic/install-archived-apk.py --verify-only
 python3 .repo/manifests/tools/restore-large-assets.py --root "$root" --verify-only
-for input in uImage th1520-lichee-pi-4a.dtb modules/powervr.ko modules/etnaviv.ko modules/hantro-vpu.ko modules/s6d6ft0.ko; do
+for input in uImage th1520-lichee-pi-4a.dtb modules/pvrsrvkm.ko modules/etnaviv.ko modules/hantro-vpu.ko modules/s6d6ft0.ko; do
     [[ -s "_prebuilts/$stage/$input" ]] || { echo "missing matching kernel input: $input" >&2; exit 1; }
 done
 export OUT_DIR=${OUT_DIR:-out-lpi4a}
