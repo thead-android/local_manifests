@@ -181,7 +181,7 @@
   <project name="platform/external/dokka" path="external/dokka" revision="d8345c012eec458555e2c027eff03a0f2726a19e" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/double-conversion" path="external/double-conversion" revision="d1eefb5e4345307e4c591d340f51951236f55f31" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/downloader" path="external/downloader" revision="8ed02f3b4f3393e617141a55f9d80a0e8b1ef57a" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
-  <project name="platform-external-drm_hwcomposer" path="external/drm_hwcomposer" revision="b6d29302b2d66d357c9e5d89cafc5bd3ca975d6e" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="drm_hwcomposer,pdk-fs" remote="thead" />
+  <project name="platform-external-drm_hwcomposer" path="external/drm_hwcomposer" revision="b9149888edc187ba78e280c0df15f6678c52bc8d" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="drm_hwcomposer,pdk-fs" remote="thead" />
   <project name="platform/external/dtc" path="external/dtc" revision="38031c62ca17368fa8a2358ce562782f63402d15" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/dynamic_depth" path="external/dynamic_depth" revision="a723797020a551c75726e8d91e068087ea489757" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="3eb17241db7cd4408cc1bce9d25b602465ace8ff" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
