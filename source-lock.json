@@ -109,10 +109,10 @@
   "platform-external-skia": {
     "path": "external/skia",
     "base": "508606366e71a3daa933a4e08bc49b84e387ec18",
-    "revision": "6c5878ae3c1d680be72276909a9ec8f3ee599aa5",
-    "tree": "21383f2b4cfd1621419d549d1ca9a551720cfa84",
+    "revision": "1ca4bc73fb101a0e667c422f2b69e18ca40ef1a8",
+    "tree": "3812daacaea57e796b5edac2fa1406cc2bcc48e9",
     "original_archived_revision": "6c5878ae3c1d680be72276909a9ec8f3ee599aa5",
-    "verification": "byte-identical to build checkout"
+    "verification": "Partial circular-clip roundoff fix: exact frozen HWUI control rebuild, 33 private GPU pixel fixtures, compile-checked Skia regression, and real SystemUI A/B/A. Large A8 uploads 12/0/10; modest mean/tail gains, no median-latency cure or full-image/Skia-suite claim. See validation/lpi4a-skia-clip-20260921.md."
   },
   "platform-external-v4l2_codec2": {
     "path": "external/v4l2_codec2",
