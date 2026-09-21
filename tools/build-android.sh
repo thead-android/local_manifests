@@ -16,7 +16,7 @@ for input in uImage th1520-lichee-pi-4a.dtb modules/pvrsrvkm.ko modules/etnaviv.
     [[ -s "_prebuilts/$stage/$input" ]] || { echo "missing matching kernel input: $input" >&2; exit 1; }
 done
 export OUT_DIR=${OUT_DIR:-out-lpi4a}
-export LLVM_PREBUILTS_VERSION=clang-c910-llvm22-mesa-20260919
+export LLVM_PREBUILTS_VERSION=clang-c910-llvm22-mesa-readelf-20260921
 export SOONG_NINJA=${SOONG_NINJA:-ninja}
 export RUST_PREBUILTS_VERSION=1.93.1-c910-llvm22
 export TARGET_PREBUILT_KERNEL="_prebuilts/$stage/uImage"

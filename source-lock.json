@@ -284,13 +284,14 @@
   },
   "prebuilts-c910": {
     "path": "prebuilts/thead",
-    "revision": "adcbc7dc8966566645d92c2649d6a0114e09d907",
-    "tree": "9582cc7fd122e4e16ca19b913062c4d697440048",
-    "clang_version": "clang-c910-llvm22-mesa-20260919",
+    "revision": "0d6926e5ea7965d0e7419c707d0bafae4fdf4822",
+    "tree": "aee478efdfb738cab68be1e2911f84aed1005f55",
+    "clang_version": "clang-c910-llvm22-mesa-readelf-20260921",
     "clang_source": "217e452c13201d5a78eca139f46d74aa1220568e",
     "clang_archive_sha256": "9e424ee9ae422927dea8e3666f34b333826348b81730e93a13e013005cb0fe28",
+    "clang_runtime_overlay_sha256": "24557d51169a74e7a98bb90dbff381a88bee675a72261bc5aca52b173872ba67",
     "rust_version": "1.93.1-c910-llvm22",
-    "verification": "Fresh GitHub asset download, installation and complete file-inventory verification passed. Clang/LLD/llc contain the mask fixes; Rust is unchanged and does not include these new LLVM changes."
+    "verification": "Immutable layered install/full inventory and11 installer tests pass; compiler/LLD/llc/Rust unchanged. C910 readelf runtime replaces stock native objects. Rebuilt simpleperf passes ISA gate, help/list/stat and host-only record/report on board. Kernel perf guest/CFI defect remains separate; see validation/lpi4a-simpleperf-20260921.md."
   },
   "toolchain-rust": {
     "path": "toolchains/rust",

@@ -1119,7 +1119,7 @@
   <contactinfo bugurl="go/repo-bug" />
   <remote name="thead" fetch="https://github.com/thead-android/" />
   <remote name="xuantie" fetch="https://github.com/xuantie-android/" />
-  <project name="prebuilts-c910" path="prebuilts/thead" remote="thead" revision="adcbc7dc8966566645d92c2649d6a0114e09d907" upstream="mesa-20260919" />
+  <project name="prebuilts-c910" path="prebuilts/thead" remote="thead" revision="0d6926e5ea7965d0e7419c707d0bafae4fdf4822" upstream="lpi4a-simpleperf-runtime-20260921" />
   <project name="toolchain-llvm-project" path="toolchains/llvm-project" remote="thead" revision="217e452c13201d5a78eca139f46d74aa1220568e" upstream="lpi4a-mesa-mask-fix-20260919" groups="notdefault,toolchain-src" />
   <project name="toolchain-rust" path="toolchains/rust" remote="thead" revision="3e4bb4ca62d97fc18c6c9c3d90f69d7d3778e318" upstream="android17" groups="notdefault,toolchain-src" />
 </manifest>
