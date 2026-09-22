@@ -12,6 +12,18 @@ aosp_root=$(realpath "$1")
 kernel_dist=$(realpath "$2")
 mkimage=$(realpath "$3")
 stage_name=${4:-lpi4a-gki}
+script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+kernel_source=${KERNEL_SOURCE_ROOT:-$PWD/common}
+expected_revision=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["kernel-common"]["revision"])' "$script_dir/../source-lock.json")
+actual_revision=$(git -C "$kernel_source" rev-parse HEAD)
+[[ "$actual_revision" == "$expected_revision" ]] || {
+  echo "kernel source is not the manifest pin: $actual_revision != $expected_revision" >&2
+  exit 1
+}
+git -C "$kernel_source" diff --quiet HEAD -- || {
+  echo "kernel source has uncommitted changes; record and pin them before packaging" >&2
+  exit 1
+}
 
 [[ "$stage_name" != */* && "$stage_name" != .* ]] || {
   echo "invalid stage name: $stage_name" >&2
@@ -55,12 +67,22 @@ done < <(find "$kernel_dist" -maxdepth 1 -type f -name '*.ko' -print0 | sort -z)
   exit 1
 }
 
+# A new touch module must not be paired with the old, unrelated display DTB.
+command -v fdtget >/dev/null || { echo "install device-tree-compiler (fdtget)" >&2; exit 1; }
+[[ -s "$tmp/modules/s6d6ft0.ko" && -s "$tmp/modules/verisilicon-dc.ko" ]]
+[[ "$(fdtget "$dtb" /panel-tl060fvxs07 compatible)" == samsung,tl060fvxs07-lpi4a ]]
+[[ "$(fdtget -t x "$dtb" /panel-tl060fvxs07 phandle)" == \
+   "$(fdtget -t x "$dtb" /soc/i2c@ffec014000/touchscreen@48 panel)" ]]
+
 gzip -n -9 -c "$tmp/Image" > "$tmp/Image.gz"
 "$mkimage" \
   -A riscv -O linux -T kernel -C gzip \
   -a 0x04000000 -e 0x04000000 \
   -n 'Linux 7.1 GKI LPI4A' \
   -d "$tmp/Image.gz" "$tmp/uImage"
+
+printf '%s\n' "$actual_revision" > "$tmp/kernel-source-revision"
+(cd "$tmp" && find . -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS)
 
 mv "$tmp" "$stage"
 trap - EXIT

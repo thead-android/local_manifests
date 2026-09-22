@@ -27,12 +27,12 @@
   "kernel-common": {
     "path": "common",
     "base": "648fd74a4d2eaed87fe242e26506f724619dacff",
-    "revision": "3a9a2b928e12e3b7911dd11f0dc39553c76774f6",
-    "tree": "12bf95292aefae365cb62211271514be464194c1",
+    "revision": "ab9779c2b0dc1a5e2ac6782d491fb07dc99ae62f",
+    "tree": "90077632787e9a95ae8aa4ab3dda0ed42e0c667f",
     "original_archived_revision": "aea50e66e9e486de36216818b7d2d924543bfe10",
-    "previous_published_revision": "449ab929ce6fc7295b0e21062a37e623d237d95b",
+    "previous_published_revision": "3a9a2b928e12e3b7911dd11f0dc39553c76774f6",
     "backport_reference": "revyos/linux acbd3c3f6d7e5610b7343dd55224bfe5e079c7e9",
-    "verification": "Preserves accepted kernel 449ab929 including Android-sync DDK and lazy DMA mapping fixes; adds CONFIG_KALLSYMS_ALL=y to the RISC-V GKI default. Fresh default-config generation and a configuration-only rebuild of the accepted running Image passed. No new kernel boot or KernelSU load qualification is claimed. See validation/lpi4a-kallsyms-20260922.md and validation/lpi4a-vendor-stack-20260920.md."
+    "verification": "Preserves CONFIG_KALLSYMS_ALL and prior graphics/network fixes. TL060 panel lifecycle and ordered S6D6FT0 startup pass two warm boots and five display cycles, exact one-command transitions and zero idle bus traffic. Owner accepted these automated checks without final manual touch confirmation. Full-system suspend hang and full CTS remain open. See validation/lpi4a-touch-20260923.md."
   },
   "platform-art": {
     "path": "art",

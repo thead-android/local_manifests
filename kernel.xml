@@ -7,7 +7,7 @@
     <linkfile src="kleaf/bazel.sh" dest="tools/bazel" />
     <linkfile src="kleaf/bzlmod/bazel.MODULE.bazel" dest="MODULE.bazel" />
   </project>
-  <project name="kernel-common" path="common" revision="3a9a2b928e12e3b7911dd11f0dc39553c76774f6" upstream="lpi4a-vendor-module-20260920" dest-branch="lpi4a-vendor-module-20260920" remote="thead" />
+  <project name="kernel-common" path="common" revision="ab9779c2b0dc1a5e2ac6782d491fb07dc99ae62f" upstream="lpi4a-vendor-module-20260920" dest-branch="lpi4a-vendor-module-20260920" remote="thead" />
   <project name="kernel/common-modules/trusty" path="common-modules/trusty" revision="e60e7dfc3f889c4a9fe856911c166463fcb40029" upstream="main-kernel" dest-branch="main-kernel" />
   <project name="kernel/common-modules/virtual-device" path="common-modules/virtual-device" revision="4c1a09fd797efc052160c858c937310290c7b13c" upstream="android-mainline-riscv64" dest-branch="android-mainline-riscv64" />
   <project name="kernel/common-modules/wonder" path="common-modules/wonder" revision="86ef5efc7d6534d8eb75c732c852a5bd53acff07" upstream="android-mainline" dest-branch="android-mainline" />

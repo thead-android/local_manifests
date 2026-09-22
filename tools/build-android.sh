@@ -7,14 +7,21 @@ if [[ $# -lt 1 || $# -gt 2 ]]; then
 fi
 root=$(realpath "$1")
 stage=${2:-lpi4a-publication}
+script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 [[ "$stage" != */* && "$stage" != .* ]] || exit 2
 cd "$root"
 python3 prebuilts/thead/install.py --root "$root" --verify-only
 python3 vendor/thead/proprietary/prebuilts/generic/install-archived-apk.py --verify-only
 python3 .repo/manifests/tools/restore-large-assets.py --root "$root" --verify-only
-for input in uImage th1520-lichee-pi-4a.dtb modules/pvrsrvkm.ko modules/etnaviv.ko modules/hantro-vpu.ko modules/s6d6ft0.ko; do
+for input in uImage th1520-lichee-pi-4a.dtb modules/pvrsrvkm.ko modules/etnaviv.ko modules/hantro-vpu.ko modules/s6d6ft0.ko modules/verisilicon-dc.ko kernel-source-revision SHA256SUMS; do
     [[ -s "_prebuilts/$stage/$input" ]] || { echo "missing matching kernel input: $input" >&2; exit 1; }
 done
+expected_revision=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["kernel-common"]["revision"])' "$script_dir/../source-lock.json")
+[[ "$(cat "_prebuilts/$stage/kernel-source-revision")" == "$expected_revision" ]] || {
+    echo "stale kernel stage; rebuild and package the manifest-pinned kernel" >&2
+    exit 1
+}
+(cd "_prebuilts/$stage" && sha256sum -c SHA256SUMS)
 export OUT_DIR=${OUT_DIR:-out-lpi4a}
 export LLVM_PREBUILTS_VERSION=clang-c910-llvm22-mesa-readelf-20260921
 export SOONG_NINJA=${SOONG_NINJA:-ninja}

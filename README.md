@@ -8,7 +8,8 @@ step is required.
 
 The kernel branch imports the **complete upstream source snapshot** at
 `648fd74a4d2eaed87fe242e26506f724619dacff`, followed by 26 separate port commits.
-Its final tree is identical to the archived R2 + touch source. Port commit
+That initial import matched the archived R2 + touch source. Later pinned
+commits contain the validated follow-ups described under `validation/`. Port commit
 authors/messages are retained; earlier upstream ancestry is referenced upstream
 instead of being reimported into this branch. The original-to-published port
 commit mapping is recorded in `provenance/kernel-snapshot-map.json`.
@@ -20,7 +21,8 @@ TL060FVXS07 touch integration, with the limitations below.
 ## Fetch
 
 Use a Linux x86-64 build host; the archived toolchains were used on Ubuntu 24.04.
-Install AOSP build prerequisites, `repo`, Python 3.12+, Git and `u-boot-tools`.
+Install AOSP build prerequisites, `repo`, Python 3.12+, Git, `u-boot-tools`, and
+`device-tree-compiler` (including `fdtget`).
 Allow several hundred GiB for sources, intermediates and toolchains.
 
 ```sh
@@ -51,9 +53,9 @@ build boundaries in [Mesa/compiler validation](validation/lpi4a-mesa-20260919.md
 
 ## Kernel and modules
 
-This branch selects the DDK/GC620 **integration candidate**. Read
-[its validation limits](validation/lpi4a-vendor-stack-20260920.md) before use.
-The stable/default manifest is not changed by publishing this candidate.
+This branch selects the DDK/GC620 integration with the subsequent pinned fixes.
+Read [its original validation limits](validation/lpi4a-vendor-stack-20260920.md)
+and the [touch lifecycle acceptance](validation/lpi4a-touch-20260923.md).
 
 Use a separate checkout to avoid collisions between Android and Kleaf layouts:
 
@@ -70,6 +72,11 @@ bash .repo/manifests/tools/package-kernel.sh ../android17-lpi4a out/lpi4a/dist /
 Always package Image, DTB and **all** modules from the same build. The device
 configuration deliberately fails if the required matching module stage is
 missing; it must not fall back to the historical vendor 5.10 modules.
+Run the packaging command from the kernel checkout, or set `KERNEL_SOURCE_ROOT`
+to its `common` repository. Packaging checks the clean source revision and touch
+panel DT association, and records the stage revision and file hashes. Android
+builds reject an old stage or a stage changed after packaging. These are
+anti-mixup checks, not a claim of hermetic build provenance.
 
 ## Android
 
