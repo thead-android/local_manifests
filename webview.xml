@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="xuantie" fetch="https://github.com/xuantie-android/" />
+  <remote name="chromium" fetch="https://chromium.googlesource.com/" />
+  <default remote="xuantie" sync-j="4" />
+  <project name="platform-external-chromium" path="src" revision="17a29e73d6966df2bee5ab3679b3ccc731556c88" upstream="lpi4a-webview-153-20260922" clone-depth="1" />
+  <project name="chromium/tools/depot_tools" path="depot_tools" remote="chromium" revision="7ccadeaefc68d1711a1187ea57b07f1aaee57538" clone-depth="1" />
+</manifest>

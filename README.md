@@ -87,6 +87,27 @@ The manifest pins source content; a new build's timestamps/build IDs need not be
 byte-identical to the old frozen images. Source publication and previous board
 validation are not substitutes for a new full clean-build/flash acceptance run.
 
+## Native WebView
+
+The current product includes the qualified native C910 WebView153. The existing
+`prebuilts/thead/install.py` command also restores its immutable APK, checks its
+SHA256 and refuses different local bytes. Soong installs it presigned into
+product; no manual `/data/app` installation is needed on a clean image.
+See [validation and boundaries](validation/lpi4a-webview-20260922.md).
+
+The complete applied Chromium source is a separate workspace, avoiding AOSP's
+toolchain/Soong namespace conflicts:
+
+```sh
+mkdir ../webview-c910 && cd ../webview-c910
+repo init -u https://github.com/xuantie-android/local_manifests -b lpi4a-vendor-stack-20260920 -m webview.xml
+repo sync -c -j8
+```
+
+Follow `src/C910_WEBVIEW.md` for gclient dependencies, matching Chromium tools,
+the archived sysroot/builtins, and the native tests. Source changes are already
+applied; no patch replay is required. This does not replace the AOSP toolchain.
+
 ## Included paths
 
 - Open Mesa PowerVR Vulkan, Android ANGLE GLES and the Skia icon correctness fix.

@@ -6,7 +6,7 @@
   <project name="device-thead-common" path="device/thead/common" remote="thead" revision="54b31c06be13e96e8c6e8308f794db314d980888" upstream="android17" dest-branch="android17" groups="local::c910-board" />
   <project name="device-thead-th1520" path="device/thead/th1520" remote="thead" revision="df63c7927ecb11fabd850802b92a52866efc0b36" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="local::c910-board" />
   <project name="device-thead-th1520-kernel" path="device/thead/th1520-kernel" remote="thead-c910-board" revision="e3b294947bb92e1dbab49d6dba9fded2466d7edd" upstream="thead-android_dev" dest-branch="thead-android_dev" groups="local::c910-board" clone-depth="1" />
-  <project name="device-thead-th1520-lichee_pi_4a" path="device/thead/th1520/lichee_pi_4a" remote="thead" revision="56944f58554cc457911c182862ad43dda15f82c3" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="local::c910-board" />
+  <project name="device-thead-th1520-lichee_pi_4a" path="device/thead/th1520/lichee_pi_4a" remote="thead" revision="8f3fc0d5ac41db5949d020e3d91c37ef0e6caf59" upstream="lpi4a-vendor-stack-20260920" dest-branch="lpi4a-vendor-stack-20260920" groups="local::c910-board" />
   <project name="device/amlogic/yukawa" revision="cfa1b7f9bf57241b719ea2b1ddcfdd76f26079b9" upstream="android17-release" dest-branch="android17-release" groups="device,pdk,yukawa" />
   <project name="device/amlogic/yukawa-kernel" revision="ff822d1ec33dc9a8225d34a1c576f8af26fdb0fd" upstream="android17-release" dest-branch="android17-release" groups="device,pdk,yukawa" clone-depth="2" />
   <project name="device/common" revision="9e48dd8859c3eb6b911bcc9d1ce48a4278bd03f5" upstream="android17-release" dest-branch="android17-release" groups="pdk,pdk-cw-fs" />
@@ -151,6 +151,7 @@
   <project name="platform/external/chromium-trace" path="external/chromium-trace" revision="108ba83473a1d40627306632a4629d4d13747cf3" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/chromium-web-tests" path="external/chromium-web-tests" revision="9e6255ebc1eeff6dc5b5fac397bf0dace769c1a6" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/chromium-webview" path="external/chromium-webview" revision="04e0e02c9aac0d05b99d2c20c19b74b5b3577728" upstream="android17-release" dest-branch="android17-release" groups="pdk" clone-depth="1" />
+  <project name="platform-external-chromium-webview-c910" path="external/chromium-webview/c910" remote="xuantie" revision="1df1dbda0b3e92f70f8fa161ee694d3955af22f3" upstream="lpi4a-webview-20260922" groups="pdk" />
   <project name="platform/external/chromiumos-config" path="external/chromiumos-config" revision="0f9ee62b2480d7ffa81c1584407813e7a6d930ca" upstream="android17-release" dest-branch="android17-release" groups="pdk" clone-depth="1" />
   <project name="platform/external/clang" path="external/clang" revision="bdc4d062dc4550869e0825da19fe8fa720db860a" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
   <project name="platform/external/cldr" path="external/cldr" revision="412929f8652bc3df352af8c9084338ed836d4360" upstream="android17-release" dest-branch="android17-release" groups="pdk" />
@@ -1119,7 +1120,7 @@
   <contactinfo bugurl="go/repo-bug" />
   <remote name="thead" fetch="https://github.com/thead-android/" />
   <remote name="xuantie" fetch="https://github.com/xuantie-android/" />
-  <project name="prebuilts-c910" path="prebuilts/thead" remote="thead" revision="0d6926e5ea7965d0e7419c707d0bafae4fdf4822" upstream="lpi4a-simpleperf-runtime-20260921" />
+  <project name="prebuilts-c910" path="prebuilts/thead" remote="thead" revision="de11c81dfb4a4dffa02e078cf966c53e45552217" upstream="lpi4a-webview-20260922" />
   <project name="toolchain-llvm-project" path="toolchains/llvm-project" remote="thead" revision="217e452c13201d5a78eca139f46d74aa1220568e" upstream="lpi4a-mesa-mask-fix-20260919" groups="notdefault,toolchain-src" />
   <project name="toolchain-rust" path="toolchains/rust" remote="thead" revision="3e4bb4ca62d97fc18c6c9c3d90f69d7d3778e318" upstream="android17" groups="notdefault,toolchain-src" />
 </manifest>

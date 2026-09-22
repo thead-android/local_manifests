@@ -18,8 +18,9 @@
   "device-thead-th1520-lichee_pi_4a": {
     "path": "device/thead/th1520/lichee_pi_4a",
     "base": "1542ff9fc6b81fe2bd8d166ac8bfddde7cf877d4",
-    "revision": "56944f58554cc457911c182862ad43dda15f82c3",
-    "tree": "ef36ef03d939eebd21620c9f828636302cda1cf5",
+    "revision": "8f3fc0d5ac41db5949d020e3d91c37ef0e6caf59",
+    "tree": "bb3a110dff39de99c4ebbf861cea9cbba942a960",
+    "webview_update": "Adds the qualified native webview-c910 product package; previous board/graphics/touch configuration retained.",
     "original_archived_revision": "4e4fe1cf0bddf7538f36ad987f96d26a6a641e7b",
     "verification": "Archived product/touch source plus DDK Vulkan/gralloc selection, Android-sync KMD load and narrow observed Codec2 socket allowances. Touch-input guard fixed for product inheritance. Candidate image cold-boot validation pending."
   },
@@ -282,10 +283,17 @@
     "original_archived_revision": "a506ae07982c54006a5b8072ebe5a543694ed952",
     "verification": "Archived C910 layers plus four mask-correctness commits, including exact historical VL1/VL2 source parity restoration. Scalar-swizzle, real Skia shader replay and new-LLD ThinLTO tests pass; see validation/lpi4a-mesa-20260919.md."
   },
+  "platform-external-chromium-webview-c910": {
+    "path": "external/chromium-webview/c910",
+    "revision": "1df1dbda0b3e92f70f8fa161ee694d3955af22f3",
+    "tree": "c51fa8cbd6c753eef4e607dc556bc89f1ad136c6",
+    "verification": "Presigned/preprocessed riscv64 import under the official WebView package; existing AdServices visibility retained. See validation/lpi4a-webview-20260922.md."
+  },
   "prebuilts-c910": {
     "path": "prebuilts/thead",
-    "revision": "0d6926e5ea7965d0e7419c707d0bafae4fdf4822",
-    "tree": "aee478efdfb738cab68be1e2911f84aed1005f55",
+    "revision": "de11c81dfb4a4dffa02e078cf966c53e45552217",
+    "tree": "a785d73c572c9939ae5ea8020e64ea1befca1ab3",
+    "webview_apk_sha256": "69a7a49339e846193506981036178265a4f8b3128394daa7f8cdc94af8c61a4f",
     "clang_version": "clang-c910-llvm22-mesa-readelf-20260921",
     "clang_source": "217e452c13201d5a78eca139f46d74aa1220568e",
     "clang_archive_sha256": "9e424ee9ae422927dea8e3666f34b333826348b81730e93a13e013005cb0fe28",
