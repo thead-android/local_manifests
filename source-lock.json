@@ -27,12 +27,12 @@
   "kernel-common": {
     "path": "common",
     "base": "648fd74a4d2eaed87fe242e26506f724619dacff",
-    "revision": "c61e387684fe38888b942fe42d6418041f5f7a80",
-    "tree": "9395e2482bd5d398c0d298c7bedfb6c413d39699",
+    "revision": "3a9a2b928e12e3b7911dd11f0dc39553c76774f6",
+    "tree": "12bf95292aefae365cb62211271514be464194c1",
     "original_archived_revision": "aea50e66e9e486de36216818b7d2d924543bfe10",
-    "previous_published_revision": "d867ce4aa96d8ec1bfab8469e0e5b7dcd18a278a",
+    "previous_published_revision": "449ab929ce6fc7295b0e21062a37e623d237d95b",
     "backport_reference": "revyos/linux acbd3c3f6d7e5610b7343dd55224bfe5e079c7e9",
-    "verification": "Keeps the previously validated seven DRM backports and imports the exact Android-sync DDK subtree from adaptation a745203. The DDK was tested as an external module against the running 7.1 kernel, with 285 symbol CRCs and KCFI. The incremental image uses its archived kernel baseline; this is not a clean full-kernel image rebuild claim. See validation/lpi4a-vendor-stack-20260920.md."
+    "verification": "Preserves accepted kernel 449ab929 including Android-sync DDK and lazy DMA mapping fixes; adds CONFIG_KALLSYMS_ALL=y to the RISC-V GKI default. Fresh default-config generation and a configuration-only rebuild of the accepted running Image passed. No new kernel boot or KernelSU load qualification is claimed. See validation/lpi4a-kallsyms-20260922.md and validation/lpi4a-vendor-stack-20260920.md."
   },
   "platform-art": {
     "path": "art",
